@@ -21,7 +21,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/Chart";
-import { CircleParking, Cloudy, Flower2, Trash2 } from "lucide-react";
+import { CircleParking, Cloudy, Flower2, LightbulbOff, Trash2, UserRound } from "lucide-react";
 import { TrendingUp } from "lucide-react";
 import React from "react";
 import { Label, Pie, PieChart } from "recharts";
@@ -101,14 +101,30 @@ export function ServiceCard() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
-                Garbage Service
+              Lights off
               </CardTitle>
-              <Trash2 className="size-5 text-muted-foreground" />
+              <LightbulbOff className="size-5 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">NO</div>
+              <div className="text-2xl font-bold">0</div>
               <p className="text-xs text-muted-foreground">
-                Last done 2 months, 2 weeks ago
+              Last checked 2 hours ago
+              </p>
+            </CardContent>
+          </Card>
+        </CarouselItem>
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:1/6">
+          <Card>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+              Person fall
+              </CardTitle>
+              <UserRound className="size-5 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">0</div>
+              <p className="text-xs text-muted-foreground">
+              Last checked now
               </p>
             </CardContent>
           </Card>

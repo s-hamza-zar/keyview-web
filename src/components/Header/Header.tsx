@@ -8,9 +8,11 @@ import PropertyBadge from "./PropertyBadge";
 import { useTheme } from "next-themes";
 
 export function Header() {
+  const {theme}=useTheme();
+  console.log(theme,"theme")
   return (
     <header
-      className={`sticky top-0 z-10 flex h-[60px] items-center border-b
+      className={`sticky top-0 z-10 flex h-[60px] items-center border-b bg-[#fff] dark:bg-[#020817]
      `}
     >
       <div className="ml-4">
